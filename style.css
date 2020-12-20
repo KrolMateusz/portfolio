@@ -1,3 +1,7 @@
+:root {
+    --green: #00897b;
+}
+
 * {
     margin: 0px;
     box-sizing: border-box;
@@ -5,5 +9,35 @@
 }
 
 body {
-    background-color: coral;
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+.nav-list {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: 500;
+}
+
+.nav-item {
+    list-style: none;
+    margin-right: 2.5rem;
+    font-size: 1.2rem;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #000
+}
+
+.nav-item:first-child {
+    margin-right: auto;
+    margin-left: 2.5rem;
+}
+
+.fa-home {
+    color: var(--green);
+    font-size: 2rem;
 }
