@@ -10,15 +10,22 @@
 
 body {
     font-family: 'Roboto Mono', monospace;
-
 }
 
 .nav-list {
     padding: 1rem 0;
+    background-color: #fff;
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
     font-weight: 500;
+    position: fixed;
+    width: 100%;
+    top:0;
+    overflow: hidden;
+    /* border-bottom: 1px solid var(--green); */
+    box-shadow:0 1px 3px rgba(0, 0, 0, .2)
 }
 
 .nav-item {
@@ -29,7 +36,12 @@ body {
 
 .nav-item a {
     text-decoration: none;
-    color: #000
+    color: #000;
+    /* transition: all 200ms ease-in; */
+}
+
+.nav-item a:hover {
+    color: var(--green);
 }
 
 .nav-item:first-child {
@@ -40,4 +52,8 @@ body {
 .fa-home {
     color: var(--green);
     font-size: 2rem;
+}
+
+main {
+    margin-top: 5rem;
 }
