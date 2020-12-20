@@ -1,5 +1,6 @@
 :root {
-    --green: #00897b
+    --green: #00897b;
+    --light-grey: #6f6f6f;
 }
 
 * {
@@ -31,13 +32,12 @@ nav .logo {
     height: 100%;
     display: flex;
     align-items: center;
-    font-size: 24px;
     padding-left: 1em;
 }
 
 .fa-home {
     color: var(--green);
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 nav .links {
@@ -90,8 +90,59 @@ nav .icon-burger .line {
 }
 
 main {
-    margin-top: 5%;
+    margin-top: 8%;
     position: relative;
+}
+
+.introduction-section {
+    width: 55%;
+    margin: auto;
+}
+
+.name {
+    font-size: 3em;
+    font-weight: 700;
+    margin: 1em 0;
+}
+
+.job-info {
+    font-size: 2.5em;
+    margin: auto;
+    margin: .8em 0;
+}
+
+.personal-info {
+    font-size: 1.7em;
+    margin: .8em 0;
+    color: var(--light-grey)
+}
+
+.highlight {
+    background-color: var(--green);
+    color: #fff;
+}
+
+.about-me {
+    padding-top: 4em;
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    margin: auto;
+}
+
+.about-me-header {
+    flex: 0 0 100%;
+}
+
+.about-me-article {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-me-article p:nth-child(2) {
+    flex: 1 0 70%;
+    padding-left: 1.5em;
 }
 
 @media screen and (max-width: 500px) {
