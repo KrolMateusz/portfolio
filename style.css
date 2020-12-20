@@ -145,7 +145,7 @@ main {
     padding-left: 1.5em;
 }
 
-.my-projects-intro {
+.section-intro {
     width: 15%;
     margin-top: 5em;
     margin-bottom: 3em;
@@ -188,19 +188,25 @@ main {
     }
 
     to {
-        transform: translateY(-20px);
+        transform: translateY(-10px);
     }
 }
 
 @keyframes project-card-animation-after-hover {
     from {
-        transform: translateY(-20px);
+        transform: translateY(-10px);
     }
 
     to {
         transform: translateY(0);
     }
 }
+
+#contact {
+    width: 10%;
+}
+
+
 
 @media screen and (max-width: 500px) {
     nav .logo {
