@@ -81,12 +81,12 @@ nav .icon-burger {
 }
 
 nav .icon-burger .line {
-	width: 30px;
-	height: 5px;
-	background-color: var(--green);
-	margin: 5px;
-	border-radius: 3px;
-	transition: all .3s ease-in-out;
+    width: 30px;
+    height: 5px;
+    background-color: var(--green);
+    margin: 5px;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
 }
 
 main {
@@ -143,6 +143,63 @@ main {
 .about-me-article p:nth-child(2) {
     flex: 1 0 70%;
     padding-left: 1.5em;
+}
+
+.my-projects-intro {
+    width: 15%;
+    margin-top: 5em;
+    margin-bottom: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 0.5em;
+    font-weight: 700;
+    font-size: 1.5em;
+    background-color: var(--green);
+    color: #fff;
+}
+
+.projects-grid {
+    display: grid;
+    margin: 1em 2.5em;
+    grid: 1fr 1fr / 1fr 1fr;
+    column-gap: 2em;
+    row-gap: 3.5em;
+    background-color: #fff;
+}
+
+.single-project {
+    padding: 1em;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .19), 0 6px 6px rgba(0, 0, 0, .23);
+    animation-name: project-card-animation-after-hover;
+    animation-duration: .6s;
+    animation-fill-mode: forwards;
+}
+
+.single-project:hover {
+    animation-name: project-card-animation-on-hover;
+    animation-duration: .6s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes project-card-animation-on-hover {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes project-card-animation-after-hover {
+    from {
+        transform: translateY(-20px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
 }
 
 @media screen and (max-width: 500px) {
