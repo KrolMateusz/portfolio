@@ -480,6 +480,9 @@ main {
 }
 
 @media screen and (max-width: 570px) {
+    body {
+        font-size: 14px;
+    }
     nav .logo {
         float: none;
         width: auto;
@@ -536,5 +539,21 @@ main {
     .project-technologies > svg {
         width: 4em;
         height: 4em;
+    }
+}
+
+@media all and (max-width: 500px) {
+    body {
+        font-size: 12px;
+    }
+
+    .introduction-section,
+    .about-me,
+    .projects-grid {
+        margin: 0.5em 1em;
+    }
+
+    .contact-container {
+        margin: 2em 1em;
     }
 }
