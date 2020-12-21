@@ -1,6 +1,7 @@
 :root {
     --green: #00897b;
     --light-grey: #6f6f6f;
+    --inactive-grey: #adadad;
 }
 
 * {
@@ -245,6 +246,48 @@ main {
 #contact {
     width: 10%;
 }
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 5em;
+    padding: 3em 5em;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .19), 0 6px 6px rgba(0, 0, 0, .23);
+}
+
+.contact-form {
+    width: 100%;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--inactive-grey);
+    margin-bottom: 3em;
+}
+
+.form-field-textarea {
+    margin-bottom: 0;
+}
+
+.form-label {
+    color: var(--inactive-grey);
+}
+
+.form-field-input {
+    width: 100%;
+}
+
+
 
 
 
