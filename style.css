@@ -266,6 +266,7 @@ main {
 .form-container {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .form-field {
@@ -273,20 +274,35 @@ main {
     outline: none;
     border-bottom: 2px solid var(--inactive-grey);
     margin-bottom: 3em;
+    font-size: 1.1em;
+    transition: all .5s ease;
+}
+
+.form-field:focus {
+    border-bottom: 2px solid var(--green);
+}
+
+
+.form-label {
+    position: absolute;
+    top: 1em;
+    color: var(--inactive-grey);
+}
+
+.form-label-textarea {
+    position: absolute;
+    top: 0;
+    color: var(--inactive-grey);
+}
+
+
+.form-field-input {
+    height: 3em;
 }
 
 .form-field-textarea {
     margin-bottom: 0;
 }
-
-.form-label {
-    color: var(--inactive-grey);
-}
-
-.form-field-input {
-    width: 100%;
-}
-
 
 
 
