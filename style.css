@@ -147,7 +147,20 @@ main {
 }
 
 .hobbies-container {
-    flex: 1 1 1fr;
+    flex: 1 1 35%;
+}
+
+.icon {
+    list-style-type: none;
+}
+
+.icon i {
+    margin-right: 1em;
+}
+
+.icon i.fa-futbol,
+.icon i.fa-headphones {
+    margin-right: 1.3em;
 }
 
 .about-me-description {
