@@ -132,18 +132,47 @@ main {
 }
 
 .about-me-header {
-    flex: 0 0 100%;
+    align-self: center;
+    background-color: var(--green);
+    color: #fff;
+    padding: .5em 1.5em;
+    margin-top: 1em;
+    margin-bottom: 2em;
 }
 
 .about-me-article {
     margin-top: 1em;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
-.about-me-article p:nth-child(2) {
-    flex: 1 0 70%;
+.hobbies-container {
+    flex: 1 1 1fr;
+}
+
+.about-me-description {
+    flex: 1 1 1fr;
     padding-left: 1.5em;
+}
+
+.bold-text {
+    font-weight: 700;
+}
+
+.about-me-article p:nth-child(n + 1) {
+    margin-top: 1em;
+}
+
+.technologies-container {
+    margin-top: 1em;
+    margin-left: 3em;
+}
+
+.technologies-list {
+    display: grid;
+    grid: 1fr 1fr 1fr / 1fr 1fr;
+    row-gap: .4rem;
+    column-gap: 3rem;
 }
 
 .section-intro {
