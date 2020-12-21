@@ -403,7 +403,9 @@ main {
     font-size: .9em;
 }
 
-.fa-envelope, .fa-linkedin {
+.fa-envelope,
+.fa-linkedin,
+.github-footer {
     margin-top: .5em;
     color: #fff;
     border: #fff 2px solid;
@@ -413,7 +415,9 @@ main {
     transition: all .3s ease-in-out;
 }
 
-.fa-envelope:hover, .fa-linkedin:hover {
+.fa-envelope:hover,
+.fa-linkedin:hover,
+.github-footer:hover {
     color: var(--green);
     background-color: #fff;
 } 
