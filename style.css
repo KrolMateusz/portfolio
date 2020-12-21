@@ -308,11 +308,13 @@ main {
 .form-field:focus  + .form-label {
     color: var(--green);
     transform: translateY(-2em);
+    font-size: .9em;
 }
 
 .form-field:focus  + .form-label-textarea {
     color: var(--green);
     transform: translateY(-2em);
+    font-size: .9em;
 }
 
 
