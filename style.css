@@ -21,7 +21,7 @@ nav {
     left: 0;
     right: 0;
     top: 0;
-    height: 10%;
+    height: 10vh;
     font-weight: 500;
     background-color: #fff;
     box-shadow: 1px 0 7px rgba(0, 0, 0, .5);
@@ -95,7 +95,7 @@ nav .icon-burger .line {
 }
 
 main {
-    margin-top: 8%;
+    margin-top: 14vh;
     position: relative;
 }
 
@@ -415,13 +415,67 @@ main {
 
 .fa-envelope:hover, .fa-linkedin:hover {
     color: var(--green);
-    border-color: var(--green);
     background-color: #fff;
 } 
 
+@media all and (max-width: 1300px) {
+    .introduction-section,
+    .about-me {
+        width: 70%;
+    }
 
+    .section-intro {
+        width: 20%;
+    }
+}
 
-@media screen and (max-width: 500px) {
+@media all and (max-width: 1000px) {
+    .introduction-section,
+    .about-me {
+        width: 80%;
+    }
+
+    .section-intro {
+        width: 25%;
+    }
+
+    .projects-grid {
+        grid: 1fr 1fr / 1fr;
+    }
+
+    .contact-container {
+        width: auto;
+        margin: 3em 2.5em;
+    }
+}
+
+@media all and (max-width: 880px) {
+    .introduction-section,
+    .about-me {
+        width: auto;
+        margin: 1em 2.5em;
+    }
+
+    .introduction-section {
+        text-align: center;
+    }
+
+    .about-me-article {
+        flex-direction: column;
+    }
+    
+    .hobbies-container {
+        order: 1;
+        padding-left: 1.5em;
+    }
+
+    .icon {
+        margin-top: 1em;
+        margin-left: 1.6em;
+    }
+}
+
+@media screen and (max-width: 570px) {
     nav .logo {
         float: none;
         width: auto;
@@ -471,4 +525,12 @@ main {
         opacity: 0;
     }
 
+    .section-intro {
+        width: 45%;
+    }
+
+    .project-technologies > svg {
+        width: 4em;
+        height: 4em;
+    }
 }
