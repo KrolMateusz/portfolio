@@ -278,21 +278,18 @@ main {
     transition: all .5s ease;
 }
 
-.form-field:focus {
-    border-bottom: 2px solid var(--green);
-}
-
-
 .form-label {
     position: absolute;
     top: 1em;
     color: var(--inactive-grey);
+    transition: all .5s ease;
 }
 
 .form-label-textarea {
     position: absolute;
     top: 0;
     color: var(--inactive-grey);
+    transition: all .5s ease;
 }
 
 
@@ -302,6 +299,20 @@ main {
 
 .form-field-textarea {
     margin-bottom: 0;
+}
+
+.form-field:focus {
+    border-bottom: 2px solid var(--green);
+}
+
+.form-field:focus  + .form-label {
+    color: var(--green);
+    transform: translateY(-2em);
+}
+
+.form-field:focus  + .form-label-textarea {
+    color: var(--green);
+    transform: translateY(-2em);
 }
 
 
