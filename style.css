@@ -147,7 +147,7 @@ main {
 }
 
 .hobbies-container {
-    flex: 1 1 35%;
+    flex: 1 1 40%;
 }
 
 .icon {
@@ -156,6 +156,7 @@ main {
 
 .icon i {
     margin-right: 1em;
+    font-size: 1.3em;
 }
 
 .icon i.fa-futbol,
