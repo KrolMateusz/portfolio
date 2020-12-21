@@ -192,6 +192,22 @@ main {
     padding-right: 1em;
 }
 
+.project-link {
+    margin-top: 1em;
+    padding: .4em .6em;
+    border: var(--green) 3px solid;
+    display: inline-block;
+    color: var(--green);
+    text-decoration: none;
+    font-weight: 700;
+    transition: all .3s ease-in-out;
+}
+
+.project-link:hover {
+    color: #fff;
+    background-color: var(--green);
+}
+
 .single-project {
     padding: 1.5em;
     box-shadow: 0 10px 20px rgba(0, 0, 0, .19), 0 6px 6px rgba(0, 0, 0, .23);
