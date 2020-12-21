@@ -41,6 +41,10 @@ nav .logo {
     font-size: 2em;
 }
 
+nav {
+    padding: 0 1em;
+}
+
 nav .links {
     float: right;
     width: 80%;
@@ -286,8 +290,15 @@ main {
     }
 }
 
+.contact {
+    margin-top: 3em;
+}
+
 #contact {
-    width: 10%;
+    width: auto;
+    margin-top: 1em;
+    margin-bottom: 4em;
+    padding: .5em 1em;
 }
 
 .contact-container {
