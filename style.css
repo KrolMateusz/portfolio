@@ -335,6 +335,36 @@ main {
     background-color: var(--green);
 }
 
+.footer-container {
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--green);
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright {
+    color: #fff;
+    font-size: .9em;
+}
+
+.fa-envelope, .fa-linkedin {
+    margin-top: .5em;
+    color: #fff;
+    border: #fff 2px solid;
+    border-radius: 50%;
+    font-size: 1.2em;
+    padding: .5em;
+    transition: all .3s ease-in-out;
+}
+
+.fa-envelope:hover, .fa-linkedin:hover {
+    color: var(--green);
+    border-color: var(--green);
+    background-color: #fff;
+} 
+
 
 
 @media screen and (max-width: 500px) {
