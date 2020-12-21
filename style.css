@@ -298,7 +298,7 @@ main {
 }
 
 .form-field-textarea {
-    margin-bottom: 0;
+    margin-bottom: 3em;
 }
 
 .form-field:focus {
@@ -317,6 +317,23 @@ main {
     font-size: .9em;
 }
 
+.form-submit {
+    position: static;
+    padding: .4em .6em;
+    margin: auto;
+    border: var(--green) 3px solid;
+    color: var(--green);
+    background-color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2em;
+    transition: all .3s ease-in-out;
+}
+
+.form-submit:hover {
+    color: #fff;
+    background-color: var(--green);
+}
 
 
 
