@@ -501,7 +501,7 @@ main {
         height: auto;
         flex-direction: column;
         justify-content: space-evenly;
-        background-color: rgba(0, 0, 0, .8);
+        background-color: rgba(0, 0, 0, .6);
         overflow: hidden;
         box-sizing: border-box;
         transition: all .5s ease-in-out;
@@ -513,7 +513,7 @@ main {
     }
 
     nav :checked~.links {
-        bottom: 0;
+        bottom: 40%;
     }
 
     nav .icon-burger {
